@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('./fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins SemiBold';
+    src: url('./fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+
+:root {
+    font-family: 'Poppins Regular';
+    --green: #00703C;
+    --neon: #7AC143;
+    --border: #EEEEEE;
+}
+
+/* General classes */
+.image-in-box {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+button {
+    font-family: 'Poppins Regular';
+}
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper-main {
+    padding: 2em 4em;
+}
+
+footer {
+    display: flex !important;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #00703C;
+    flex-direction: column;
+    padding: 1em;
+    position: relative;
+}
+
+
+@keyframes movNav {
+    0% {
+        transform: translateX(900px);
+    }
+
+    100% {
+        transform: translateX(10px);
+    }
+
+
+}
+
+.placeholder {
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(217, 217, 217);
+    padding: 1em;
+    border-radius: 20px;
+}
+
+
+.program {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+}
+
+.highlights-box {
+    border: 2px solid #7AC143;
+    border-radius: 20px;
+    padding: 1em;
+    font-size: 1em;
+    /* height: fit-content; */
+    font-family: 'Poppins Regular';
+}
+
+.highlights-box h3 {
+    margin-bottom: .5em;
+    color: #00703C;
+    font-family: 'Poppins Medium';
+    font-size: 2em;
+}
+
+.highlights-box p {
+    margin-bottom: .5em;
+    font-family: 'Poppins Regular';
+    line-height: 1.5em;
+}
+
+.highlights-item-box {
+    border: 2px solid #dedede;
+    border-radius: 20px;
+    padding: 2em;
+    font-size: 1em;
+    height: fit-content;
+}
+
+.highlights-item-box h4 {
+    color: #7AC143;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: .5em;
+    font-size: 1.5em;
+}
+
+.highlights-item-box p {
+    line-height: 1.5em;
+}
+
+.icon {
+    max-width: 4em;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow {
+    max-width: 2.5em;
+    float: right;
+    margin-top: 1.5em;
+}
+
+.bgimg {
+    position: relative;
+    margin: 0;
+    width: 10rem;
+}
+
+
+.applyNow {
+    padding: .5em 1em;
+    border: solid 2px #00703C;
+    border-radius: 10px;
+    background-color: #00703C;
+    color: white !important;
+}
+
+.applyNow:hover {
+    background-color: white;
+    color: #00703C !important;
+}
+
+.parentFooter {
+    position: relative;
+}
+
+.testimonial-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EEEEEE;
+    padding: 2em;
+    border-radius: 20px;
+}
+
+.profile-image-container img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-color: #00703C;
+}
+
+.testimonial-text-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1em;
+    line-height: 1.5em;
+}
+
+/* What will you study? */
+
+.study {
+    display: flex;
+    flex-direction: column;
+}
+
+.study h1 {
+    color: #00703C;
+    font-family: 'Poppins SemiBold', sans-serif;
+    font-size: 2rem;
+    margin-top: 1em;
+}
+
+.testimonial-heading {
+    color: #00703C;
+    font-family: 'Poppins SemiBold', sans-serif;
+    font-size: 2rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.data {
+    margin-top: 1em;
+    font-family: 'Poppins Regular', sans-serif;
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+}
+
+.study-illustrations {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    gap: 2em;
+    margin-bottom: 2em;
+    justify-content: center;
+}
+
+@media (min-width: 760px) and (max-width: 1030px) {
+    footer {
+        background-color: transparent;
+        height: 29vh;
+        position: relative;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 65em) {
+
+    .program {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .highlights-box {
+        grid-column: 1 / 3;
+        font-size: 32px;
+    }
+
+    /* what  will you study landing page */
+    .placeholder {
+        height: 100px;
+        width: 100px;
+        border: 2px solid  rgb(217, 217, 217);
+        padding: 1em;
+        border-radius: 20px;
+    }
+
+    .primary-nav {
+        flex: 1;
+        display: flex;
+    }
+
+    .primary-nav-items {
+        flex: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+        font-family: 'Poppins SemiBold';
+        font-weight: 600;
+    }
+
+    .primary-nav-items a {
+        text-decoration: none;
+        color:#00703C;
+    }
+
+    .primary-nav-items li:hover {
+        color: #7AC143;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    /* should be different according to the container above, set it manually */
+    footer {
+        background-color: transparent;
+        height: 29vh;
+        position: relative;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em 0 2em 1em;
+    }
+
+    .testimonial-container {
+        flex-direction: row;
+        border-radius: 200px;
+        padding: 0 2em 0 0;
+    }
+
+    .profile-image-container img {
+        height: 200px;
+        width: 200px;
+        border-radius: 100%;
+        background-color: #00703C;
+    }
+
+    .testimonial-text-container {
+        align-items: flex-start;
+        padding-left: 2em;
+    }
+
+    .highlights-box h3 {
+        font-size: 35px;
+    }
+
+    .highlights-box p {
+        font-size: 25px;
+    }
+
+    .study-illustrations {
+        justify-content: center;
+        gap: 2em;
+    }
+}

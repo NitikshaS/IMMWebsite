@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Media Management</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/icons/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '/img/icons/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static '/img/icons/favicon-16x16.png' %}">
+    <link rel="icon" sizes="192x192" href="{% static '/img/icons/favicon.ico' %}" />
+    <!-- <link rel="manifest" href="{% static '/img/icons/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static '/img/icons/safari-pinned-tab.svg' %}" color="#5bbad5"> -->
+    <!-- <meta name="msapplication-TileColor" content="#DA532C"> -->
+    <!-- third party libraries -->
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/acbac8cde3.js" crossorigin="anonymous"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="hero-main-container" class="hero-main-container">
+            <div class="hero-image-container">
+                <div class="slideshow-container">
+                    <div class="slide">
+                        <img class="image-in-box" src="./images/hero-image.jpg" alt="Image 1">
+                    </div>
+                    <div class="slide">
+                        <img class="image-in-box" src="./images/hero-image-1.jpg" alt="Image 2">
+                    </div>
+                    <div class="slide">
+                        <img class="image-in-box" src="./images/hero-image-3.jpg" alt="Image 3">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-header-section">
+                <div class="algonquin-logo-container">
+                    <img src="./images/AlcongquinCollegeLogo.svg">
+                </div>
+                <div class="hamburger-menu">
+                    <div class="hamburger hamburger-icon" id="hamburger-icon">
+                        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="imm-logo">
+                    <img class="imm-logo" src="./images/SchoolofMediaAndDesign.svg">
+                </div>
+
+            </div>
+            <div class="hero-text">
+                <p>INTERACTIVE</p>
+                <p>MEDIA</p>
+                <p>MANAGEMENT</p>
+            </div>
+            <div class="vertical-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="./pages/testimonial.html">Testimonials</a></li>
+                    <li><a href="./pages/faculty.html">Faculty</a></li>
+                    <li><a href="https://www.ontariocolleges.ca/en/apply-now?collegeCode=ALGO&programCode=0300X01F">Apply Now</a></li>
+                </ul>
+            </div>
+        </div>
+        <header id="primary-header" >
+            <div class="primary-header">
+
+                <div class="header-logo-container">
+                    <a href="./index.html"><img class="image-in-box" src="./images/ACBranding.svg"></a>
+                </div>
+                <nav class="primary-nav">
+                    <ul class="primary-nav-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./pages/portfolio.html">Portfolio</a></li>
+                        <li><a href="./pages/testimonial.html">Testimonials</a></li>
+                        <li><a href="./pages/faculty.html">Faculty</a></li>
+                    <li><a class="applyNow" href="https://www.ontariocolleges.ca/en/apply-now?collegeCode=ALGO&programCode=0300X01F">Apply Now</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+        <div class="hamburger-menu-items-mobile" id="hamburger-menu-items-mobile">
+            <div class="hamburger hamburger-cancel" id="hamburger-cancel">
+                <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./pages/portfolio.html">Portfolio</a></li>
+                <li><a href="./pages/testimonial.html">Testimonials</a></li>
+                <li><a href="./pages/faculty.html">Faculty</a></li>
+                <li><a href="https://www.ontariocolleges.ca/en/apply-now?collegeCode=ALGO&programCode=0300X01F">Apply now</a></li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <div class="wrapper-main">
+            <div class="program">
+                <div class="highlights-box">
+                    <h3>
+                        PROGRAM HIGHLIGHTS
+                    </h3>
+                    <p>
+                        The Interactive Media Management program at
+                        Algonquin College is well suited for anyone who has the
+                        enthusiasm to always evolve.
+                    </p>
+                </div>
+
+                <div class="highlights-item-box">
+                    <img src="./images/enhance.svg" class="icon image-in-box" alt="logo">
+                    <h4>
+                        Start or Enhance
+                    </h4>
+                    <p>
+                        Conduct and evaluate a thorough
+                        assessment of the requirements of a complex interactive media project.
+                        <a href="./pages/portfolio.html"><img class="arrow image-in-box" src="./images/arrow.svg" width="50" height="50" text-align:
+                            right></a>
+                    </p>
+                </div>
+
+                <div class="highlights-item-box">
+                    <!-- <img src="./images/timeline.svg" alt=""> -->
+                    <img src="./images/timeline.svg" class="icon image-in-box" width="50" height="50">
+                    <h4>
+                        Manage Projects
+                    </h4>
+                    <p>
+                        Conduct and evaluate a thorough
+                        assessment of the requirements of a complex interactive media project.
+                        <a href="./pages/portfolio.html"><img class="arrow image-in-box" src="./images/arrow.svg" width="50" height="50" text-align:
+                            right></a>
+                    </p>
+                </div>
+
+                <div class="highlights-item-box">
+                    <img src="./images/industry.svg" class="icon image-in-box" alt="">
+                    <h4>
+                        Industry Standard Practices
+                    </h4>
+                    <p>
+                        Conduct and evaluate a thorough
+                        assessment of the requirements of a complex interactive media project.
+                        <a href="./pages/portfolio.html"><img class="arrow image-in-box" src="./images/arrow.svg" width="50" height="50" text-align:
+                            right></a>
+                    </p>
+                </div>
+
+                <div class="highlights-item-box">
+                    <img src="./images/pdf.svg" class="icon image-in-box" width="50" height="50">
+                    <h4>
+                        Download the program overview PDF
+                    </h4>
+                    <p>
+                        Conduct and evaluate a thorough
+                        assessment of the requirements of a complex interactive media project.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- What will you be studying -->
+
+            <section class="study">
+                <div>
+                    <h1>
+                        WHAT YOU'LL BE STUDYING?
+                    </h1>
+                </div>
+                <p class="data">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, alias ea. Ipsa eligendi dolorum
+                    error
+                    libero at voluptas tempora! Ducimus magnam vero perspiciatis nostrum reiciendis id repellendus,
+                    excepturi expedita quaerat! Enim atque molestias, aliquid ab rerum sunt ullam dolores, cupiditate
+                    cumque
+                    error adipisci fugit itaque quam. Magnam quod facere commodi!
+                </p>
+                <div class="study-illustrations">
+                    <img src="./images/Icon-GraphicDesign.svg" class="placeholder" />
+                    <img src="./images/Icon-MotionGraphics.svg" class="placeholder" />
+                    <img src="./images/Icon-Photography.svg" class="placeholder" />
+                    <img src="./images/Icon-UXDesign.svg" class="placeholder" />
+                    <img src="./images/Icon-Videography.svg" class="placeholder" />
+                    <img src="./images/Icon-WebDevelopment.svg" class="placeholder" />
+                </div>
+            </section>
+            <div class="testimonial-heading">
+                <h1>
+                    TESTIMONIALS
+                </h1>
+            </div>
+            <div class="testimonial-container">
+                <div class="profile-image-container">
+                    <img class="image-in-box" src="./images/profile_image.jpg">
+                </div>
+                <div class="testimonial-text-container">
+                    <h2 style="color:#00703C; font-family:Poppins SemiBold; font-size: 2em; margin-bottom: .5em;">Miles
+                        Davis</h2>
+                    <i style="color:#7AC143; font-family: Poppins Regular;">~Interactive Media Developer, XYZ Inc</i>
+                    <p style="color:#21271F; font-family: Poppins Regular;">The Interactive Multimedia course is an
+                        excellent program, the professors are always there for us
+                        providing ever so needed advice or help. The course material is very robust and keeps up with
+                        the
+                        everchanging technological times. I'm really glad I chose this program.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img class="footerImg image-in-box" src="./images/footer.svg">
+        <div class="footerContents">
+            <div class="footer-grid-container">
+                <div class="footer-content-grids">
+                    <a href="./index.html">Home</a>
+                    <a href="./pages/portfolio.html">Portfolio</a>
+                </div>
+                <div class="footer-content-grids">
+                    <a href="./pages/faculty.html">Faculty</a>
+                    <a href="./pages/testimonial.html">Testimonials</a>
+                </div>
+                <div class="apply-now-grid">
+                    <button
+						onclick="location.href='https://www.ontariocolleges.ca/en/apply-now?collegeCode=ALGO&programCode=0300X01F';"
+						class="footerApplyNow">Apply Now</button>
+				</div>
+                </div>
+                <div class="social-media-icons">
+                    <a href="#"><i class="fa-brands fa-pinterest" style="color: white;"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube" style="color: white;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-logo">
+            <img style="height: inherit; width: inherit;" src="./images/footerBranding.svg">
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
